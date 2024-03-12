@@ -22,4 +22,11 @@ $("button").click(() => {
         (txtInput.value = "")
       );
     } 
-  
+
+    else {
+        return (
+          (infoTxt.innerHTML = `Yes, <span>'${txtInput.value}'</span> is a Palindrome !`),
+          (txtInput.value = "")
+        );
+      }
+    });  
