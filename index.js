@@ -12,3 +12,14 @@ $("input").keyup(() => {
     $("button").removeClass("active");
   }
 });
+$("button").click(() => {
+    reverse = filterinput.split("").reverse().join("");
+    infoTxt.style.display = "block";
+  
+    if (filterinput != reverse) {
+      return (
+        (infoTxt.innerHTML = `No, <span>'${txtInput.value}'</span> isn't a Palindrome !`),
+        (txtInput.value = "")
+      );
+    } 
+  
